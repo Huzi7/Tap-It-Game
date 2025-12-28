@@ -1,2 +1,15 @@
 So I have been developing a brand new mobile game since the last 2 days. The game is called Tap It, and it's designed for mobile. You can play also play with your PC. In the game you need to listen or look at the instructions on screen, and follow them.(E.G. Swipe Up)
-You lose if you don't react in time or if you do the wrong action. I will hopefully post more updates to keep you guys updated.
+You lose if you don't react in time or if you do the wrong action. I have also added a Home Menu scene, and the main game scene. Also if you fail, a panel which is called "GameOverPanel" pops up and it contains two buttons. One of them is the retry butotn and it
+refreshes the scene so that the player can try again. The scene is refreshed by the following line of code:
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+The second button is a Menu button and it sends the player back to the Menu screen. The code which controls this scene switch is the following:
+        public void GoHome()
+    {
+        LoadScene("Menu");
+    }
+Finally the Menu screen has a button which is the play button and it sends the player to the main game scene. The code which controls this scene switch is the following:
+        public void GoHome()
+    {
+        LoadScene("Menu");
+    }
+Thats it for the first devlog.I will hopefully keep you guys updated. Stay Safe!
